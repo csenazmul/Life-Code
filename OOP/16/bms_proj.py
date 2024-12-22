@@ -19,7 +19,7 @@ class Library:
     #     self.books.append(book_name)
     #     print(f"{book_name} has been added to the library.")
 
-    def __init(self):
+    def __init__(self):
         self.books_list = [] # List to store the books
 
     def book_add(self, book_name):
@@ -52,3 +52,23 @@ class Library:
             print("Books available in the library:")
             for book in self.books_list:
                 print(f"- {book.book_name}, by {book.author_name} - {book.price}")
+
+class Book:
+    def __init__(self, book_name, author_name, price):
+        self.book_name = book_name
+        self.author_name = author_name
+        self.price = price
+
+# Library class object
+my_library = Library()
+book_1 = "Some Book"
+book_1 = Book("Python Programming", "John Doe", 500)
+book_2 = Book("Java Programming", "Jane Doe", 600)
+
+my_library.book_add(book_1)
+my_library.book_add(book_2)
+
+my_library.book_list_show()
+
+my_library.book_remove(book_1)
+my_library.book_list_show()
