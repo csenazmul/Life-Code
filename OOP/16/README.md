@@ -21,11 +21,12 @@
 ```python
 def __init__(self):
     self.books_list = []  # List to store the books
+```
 
-
-#### `book_add(book_name)`
+#### book_add(book_name)
 নতুন বই লাইব্রেরিতে যোগ করার জন্য ব্যবহৃত হয়।
 ```python
 def book_add(self, book_name):
     self.books_list.append(book_name)
     print(f"{book_name} has been added to the library.")
+```
