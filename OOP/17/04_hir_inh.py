@@ -1,5 +1,4 @@
 # Description: Hierarchical Inheritance in Python
-
 class Parent:
     def parent_method(self):
         print("This is the parent class.")
